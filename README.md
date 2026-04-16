@@ -10,3 +10,10 @@ La problemática de la segunda semana consiste en seleccionar una noticia actual
 5. Pushear la nueva rama y hacer PR apuntando a la rama principal.
 6. Analizar la PR desde GitHub y mergearla.
 7. Responder a la Problemática Semanal 02 de UAI Ultra con el link de Github del repositorio creado antes de la fecha límite de entrega.
+
+## NOTICIA ELEGIDA
+La página elegida para recrear fue una noticia de Rosario3 sobre Rosario Central en la Copa Libertadores.
+
+Link original: https://www.rosario3.com/deportes/sin-di-maria-central-lleva-su-ilusion-copera-a-paraguay-y-busca-su-primer-triunfo-en-libertadores-ante-libertad-20260414-0057.html
+
+Tambien agrego el codigo fuente de la pagina original para poder comparar con la tabajada. Esta en un archivo .txt pero si se le saca eso seria una pagina funcional
