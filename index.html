@@ -161,12 +161,8 @@
           </div>
         </div>
 
-        <div style="text-align: center">
-          <div
-            class="ck-twitter"
-            style="display: inline-block"
-            id="twitter-117"
-          >
+        <div>
+          <div class="ck-twitter" id="twitter-117">
             <blockquote class="twitter-tweet">
               ¿CÓMO NO FUE GOL DE ROSARIO CENTRAL? MILAGRO EN EL ÁREA DE
               LIBERTAD.&nbsp;
@@ -206,19 +202,14 @@
           le dio al travesaño y el Canalla suspiró. El ex Newell's parecía
           adelantado de todos modos.&nbsp;
         </p>
-        <div style="text-align: center">
-          <figure class="image" style="display: inline-block" id="cnt_img_4074">
+        <div>
+          <figure class="image" id="cnt_img_4074">
             <img
               alt="Central copó su sector en Asunción (Rosario Central)."
-              data-height="450"
-              data-width="800"
-              data-size="w:800,h:450"
               hspace="5"
               vspace="5"
               title="Central copó su sector en Asunción (Rosario Central)."
               src="https://www.rosario3.com/__export/1776291400453/sites/rosario3/img/2026/04/15/central_copa.jpg_674994428.jpg"
-              width="800"
-              height="450"
             />
             <figcaption>
               Central copó su sector en Asunción (Rosario Central).
@@ -266,12 +257,8 @@
           <strong>Copetti se acordó de la definición ante el Globo</strong
           >.&nbsp;
         </p>
-        <div style="text-align: center">
-          <div
-            class="ck-twitter"
-            style="display: inline-block"
-            id="twitter-160"
-          >
+        <div>
+          <div class="ck-twitter" id="twitter-160">
             <blockquote class="twitter-tweet">
               LATERAL RÁPIDO, ASISTENCIA DE CORONEL Y DEFINICIÓN DE ENZO
               COPETTI: gol de Rosario Central para el 1-0 ante Libertad en la
@@ -344,9 +331,157 @@
             data-src="/contenidos/2026/04/14/noticia_0052.html"
             >&nbsp;</span
           >
-          <div id="relatedNews-69">.&nbsp;</div>
         </div>
       </article>
+      <section aria-labelledby="contacto-profesor">
+        <h2 id="contacto-profesor">Formulario simple de satisfaccion</h2>
+
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Datos basicos</legend>
+
+            <p>
+              <label for="nombre">Nombre</label><br />
+              <input type="text" id="nombre" name="nombre" required />
+            </p>
+
+            <p>
+              <label for="apellido">Apellido</label><br />
+              <input type="text" id="apellido" name="apellido" required />
+            </p>
+
+            <p>
+              <label for="dia-respuesta">Dia de la respuesta</label><br />
+              <select id="dia-respuesta" name="dia_respuesta" required>
+                <option value="" selected disabled>Elegi el dia</option>
+                <option value="lunes">Lunes</option>
+                <option value="martes">Martes</option>
+                <option value="miercoles">Miercoles</option>
+                <option value="jueves">Jueves</option>
+                <option value="viernes">Viernes</option>
+                <option value="sabado">Sabado</option>
+                <option value="domingo">Domingo</option>
+              </select>
+            </p>
+
+            <p>
+              <label for="fecha-respuesta">Fecha de la respuesta</label><br />
+              <input
+                type="date"
+                id="fecha-respuesta"
+                name="fecha_respuesta"
+                required
+              />
+            </p>
+
+            <p>
+              <label for="humor">Humor del que contesta</label><br />
+              <select id="humor" name="humor" required>
+                <option value="" selected disabled>Elegi tu humor</option>
+                <option value="feliz">Feliz</option>
+                <option value="motivado">Motivado</option>
+                <option value="tranquilo">Tranquilo</option>
+                <option value="entusiasmado">Entusiasmado</option>
+              </select>
+            </p>
+          </fieldset>
+
+          <fieldset>
+            <legend>Respuestas sobre la noticia</legend>
+
+            <fieldset>
+              <legend>Como te parecio la noticia</legend>
+              <p>
+                <label>
+                  <input
+                    type="radio"
+                    name="opinion_noticia"
+                    value="excelente"
+                    required
+                  />
+                  Excelente
+                </label>
+                <label>
+                  <input
+                    type="radio"
+                    name="opinion_noticia"
+                    value="muy_buena"
+                  />
+                  Muy buena
+                </label>
+                <label>
+                  <input type="radio" name="opinion_noticia" value="buena" />
+                  Buena
+                </label>
+                <label>
+                  <input
+                    type="radio"
+                    name="opinion_noticia"
+                    value="regular"
+                    disabled
+                  />
+                  <s>Regular</s>
+                </label>
+                <label>
+                  <input
+                    type="radio"
+                    name="opinion_noticia"
+                    value="mala"
+                    disabled
+                  />
+                  <s>Mala</s>
+                </label>
+              </p>
+            </fieldset>
+
+            <fieldset>
+              <legend>Que fue lo mejor de la noticia</legend>
+              <p>
+                <label>
+                  <input type="checkbox" name="destacado[]" value="titulo" />
+                  El titulo
+                </label>
+                <label>
+                  <input type="checkbox" name="destacado[]" value="contenido" />
+                  El contenido
+                </label>
+                <label>
+                  <input type="checkbox" name="destacado[]" value="imagenes" />
+                  Las imagenes
+                </label>
+              </p>
+            </fieldset>
+
+            <p>
+              <label for="puntuacion">Puntuacion positiva (π a 5)</label><br />
+              <input
+                type="range"
+                id="puntuacion"
+                name="puntuacion"
+                min="π"
+                max="5"
+                value="4"
+              />
+            </p>
+
+            <p>
+              <label for="comentario">Comentario final</label><br />
+              <textarea
+                id="comentario"
+                name="comentario"
+                rows="4"
+                placeholder="Escribi tu opinion sobre la noticia"
+                required
+              ></textarea>
+            </p>
+          </fieldset>
+
+          <p>
+            <button type="submit">Enviar formulario</button>
+            <button type="reset">Resetear datos</button>
+          </p>
+        </form>
+      </section>
     </main>
   </body>
 </html>
