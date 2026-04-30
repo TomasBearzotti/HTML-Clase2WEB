@@ -30,3 +30,7 @@ El formulario incluye:
 - Preguntas de opinion sobre la noticia.
 - Opciones positivas seleccionables y opciones negativas deshabilitadas/tachadas.
 - Botones para enviar y resetear los datos.
+
+## CLASE 4
+
+En esta clase empezamos a hacer los styles de la pagina, quedando en el archivo styles.css. Adapdamos e intentamos copiar lo mas parecido a la pagina original. Tambien se encuentra el archivo paginaOriginal.min.css.txt el cual es el archivo .css de la noticia elegida.
