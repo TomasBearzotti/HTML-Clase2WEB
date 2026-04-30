@@ -1,0 +1,425 @@
+/* ===== RESET Y GENERALES ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+html {
+  font-size: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: "Encode Sans", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+/* ===== HEADER ===== */
+header {
+  background-color: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 1.5rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+header a {
+  color: #f15a08;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+header .logo-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+header .logo {
+  height: 50px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
+header nav {
+  display: flex;
+  gap: 2rem;
+  flex: 1;
+}
+
+header nav a {
+  display: inline-block;
+  padding: 0.5rem 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+header > p {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+header > p:last-child {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 0.5rem;
+}
+
+/* ===== MAIN LAYOUT ===== */
+main {
+  max-width: 1367px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 2rem;
+}
+
+article {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 4px;
+}
+
+/* ===== ARTICLE CONTENT ===== */
+article > p:first-of-type {
+  background-color: #f0f0f0;
+  padding: 0.5rem 0;
+  color: #666;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+article h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+article h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 1.5rem;
+}
+
+article p {
+  margin-bottom: 1.5rem;
+  text-align: justify;
+  font-size: 1rem;
+}
+
+article a {
+  color: #f15a08;
+  text-decoration: none;
+}
+
+article a:hover {
+  text-decoration: underline;
+  color: #fff;
+  background-color: #f15a08;
+}
+
+/* ===== FIGURE ===== */
+figure {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+figure img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+figcaption {
+  font-size: 0.85rem;
+  color: #666;
+  font-style: italic;
+  padding: 0 0.5rem;
+}
+
+.image img {
+  margin: 5px;
+}
+
+/* ===== ARTICLE BODY CONTAINER ===== */
+.article-body-extra-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.article-body {
+  background-color: #fafafa;
+  padding: 1.5rem;
+  border-left: 4px solid #f15a08;
+  margin-bottom: 2rem;
+}
+
+.article-body p {
+  margin-bottom: 1rem;
+}
+
+.article-body p:last-child {
+  margin-bottom: 0;
+}
+
+/* ===== TWITTER EMBED ===== */
+.ck-twitter {
+  margin: 2rem 0;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.ck-twitter .item {
+  display: none;
+}
+
+/* ===== DIV CONTAINERS ===== */
+main > div:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+/* ===== FORMULARIO ===== */
+section {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 4px;
+  margin-top: 2rem;
+}
+
+section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+form {
+  max-width: 600px;
+}
+
+fieldset {
+  border: 1px solid #e0e0e0;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 4px;
+}
+
+legend {
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 0 0.5rem;
+  color: #333;
+}
+
+form p {
+  margin-bottom: 1rem;
+}
+
+label {
+  font-size: 0.95rem;
+  color: #333;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #f15a08;
+  box-shadow: 0 0 4px rgba(241, 90, 8, 0.3);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+button {
+  background-color: #f15a08;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #c54906;
+}
+
+button[type="reset"] {
+  background-color: #999;
+}
+
+button[type="reset"]:hover {
+  background-color: #777;
+}
+
+/* ===== FORMULARIO FIELDSET ANIDADOS ===== */
+fieldset fieldset {
+  border: 1px solid #f0f0f0;
+  background-color: #fafafa;
+  margin-bottom: 1rem;
+}
+
+fieldset fieldset legend {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* ===== STRIKETHROUGH ===== */
+s {
+  color: #999;
+}
+
+/* ===== RELATED NEWS ===== */
+.ck-related-news {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 2px solid #e0e0e0;
+}
+
+/* ===== STATS EMBED ===== */
+.stats-embed {
+  text-align: left;
+}
+
+.stats-iframe {
+  width: 1px;
+  min-width: 100%;
+  height: 1000px;
+}
+
+.border-0 {
+  border: 0;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  article h1 {
+    font-size: 1.8rem;
+  }
+
+  article h2 {
+    font-size: 1.1rem;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  header nav {
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  header > p {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  article {
+    padding: 1rem;
+  }
+
+  section {
+    padding: 1rem;
+  }
+
+  fieldset {
+    padding: 1rem;
+  }
+
+  article h1 {
+    font-size: 1.2rem;
+  }
+
+  button {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  header {
+    padding: 1rem;
+    flex-direction: column;
+  }
+
+  main {
+    padding: 0 1rem;
+  }
+
+  .stats-iframe {
+    height: 720px;
+  }
+}
