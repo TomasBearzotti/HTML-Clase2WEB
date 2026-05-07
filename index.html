@@ -26,6 +26,13 @@
           class="logo"
         />
       </a>
+      <input
+        type="checkbox"
+        id="menu-toggle"
+        class="menu-toggle"
+        aria-hidden="true"
+      />
+      <label for="menu-toggle" class="menu-button" aria-hidden="true">☰</label>
 
       <nav aria-label="Secciones principales">
         <a
@@ -98,8 +105,6 @@
           >YouTube</a
         >
       </p>
-
-      <p>Deportes</p>
     </header>
 
     <main>
@@ -474,6 +479,20 @@
             <button type="reset">Resetear datos</button>
           </p>
         </form>
+
+        <button onclick="document.getElementById('miModalDialog').showModal()">
+          Secret Key
+        </button>
+
+        <dialog id="miModalDialog">
+          <img
+            src="https://miro.medium.com/v2/resize:fit:1200/1*eGHIz7MqdP_tUGGVNnDfWA.jpeg"
+            alt="Imagen"
+          />
+          <button onclick="document.getElementById('miModalDialog').close()">
+            Cerrar
+          </button>
+        </dialog>
       </section>
     </main>
   </body>
