@@ -34,3 +34,7 @@ El formulario incluye:
 ## CLASE 4
 
 En esta clase empezamos a hacer los styles de la pagina, quedando en el archivo styles.css. Adapdamos e intentamos copiar lo mas parecido a la pagina original. Tambien se encuentra el archivo paginaOriginal.min.css.txt el cual es el archivo .css de la noticia elegida.
+
+## Clase 5
+
+En esta clase adaptamos nuestra page con los breakpoints para poder adaptarla a distintos tamaños de dispositivos. Nos enfocamos en que se adapte correctamente para un Mobile y establecer los puntos del breakpoint.
