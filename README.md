@@ -38,3 +38,7 @@ En esta clase empezamos a hacer los styles de la pagina, quedando en el archivo 
 ## Clase 5
 
 En esta clase adaptamos nuestra page con los breakpoints para poder adaptarla a distintos tamaños de dispositivos. Nos enfocamos en que se adapte correctamente para un Mobile y establecer los puntos del breakpoint.
+
+## Clase 6
+
+En esta clase utilizamos la funcionalidad nativa de Flexbox en css para manejar de manera mas eficiente las cosas dentro de nuestro contenedor. Lo aplico bastante en toda la organizacion de la pagina.
