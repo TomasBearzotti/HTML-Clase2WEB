@@ -123,11 +123,26 @@ header .logo {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  line-height: 0;
   white-space: nowrap;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.header-socials a:hover,
+.header-search:hover,
+.header-login:hover {
+  background-color: #f15a08;
+  transform: translateY(-1px);
 }
 
 .header-socials a img,
-.header-search img {
+.header-search img,
+.header-login img {
   width: 48px;
   height: 48px;
   display: block;
@@ -135,11 +150,35 @@ header .logo {
 }
 
 .header-search {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   line-height: 0;
-  padding-left: 1rem;
+  padding: 0.5rem 0.75rem 0.5rem 1rem;
   border-left: 1px solid #e0e0e0;
+  border-radius: 6px;
   cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.header-login {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  padding: 0.5rem 0.75rem 0.5rem 1rem;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  border-left: 1px solid #e0e0e0;
+  margin: 0;
+  border-radius: 6px;
+  font: inherit;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
 }
 
 .search-toggle {
@@ -584,6 +623,204 @@ s {
 
 #miModalDialog button:hover {
   background-color: #c54906;
+}
+
+.login-dialog {
+  border: none;
+  border-radius: 18px;
+  padding: 0;
+  max-width: 760px;
+  width: calc(100% - 1.5rem);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+  background-color: #141414;
+  color: #f3f3f3;
+}
+
+.login-dialog::backdrop {
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.subscription-form {
+  padding: 1.25rem 1.3rem 1.35rem;
+}
+
+.dialog-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.form-kicker {
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #a5a5a5;
+  margin-bottom: 0.25rem;
+}
+
+.subscription-form h2 {
+  margin: 0;
+  color: #f15a08;
+  font-size: 1.85rem;
+}
+
+.subscription-title {
+  display: none;
+}
+
+.subscription-title.is-visible {
+  display: block;
+}
+
+.dialog-intro {
+  margin-bottom: 1.1rem;
+  color: #e9e9e9;
+}
+
+.name-greeting {
+  display: none;
+  margin-bottom: 0.35rem;
+  color: #f15a08;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.name-greeting.is-visible {
+  display: block;
+}
+
+.dialog-close {
+  background: transparent;
+  color: #f3f3f3;
+  border: 0;
+  font-size: 2rem;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+.subscription-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.95rem 1rem;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field label {
+  margin-bottom: 0.35rem;
+  font-weight: 600;
+  color: #f3f3f3;
+}
+
+.subscription-form input {
+  margin-bottom: 0;
+  min-height: 3rem;
+  padding: 0.9rem 1rem;
+  border-radius: 12px;
+  border: 1px solid #4c4c4c;
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+.subscription-form input::placeholder {
+  color: #a5a5a5;
+}
+
+.field-error {
+  min-height: 1.1rem;
+  margin-top: 0.35rem;
+  color: #c54906;
+  font-size: 0.82rem;
+}
+
+.input-error {
+  border-color: #c54906 !important;
+  box-shadow: 0 0 0 2px rgba(197, 73, 6, 0.12);
+}
+
+.subscription-form .full-width,
+.form-actions {
+  grid-column: 1 / -1;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.75rem;
+}
+
+.form-actions button {
+  background-color: #f15a08;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 0;
+  min-width: 140px;
+}
+
+.form-actions button:hover,
+.dialog-close:hover {
+  background-color: #c54906;
+}
+
+.feedback-dialog {
+  border: none;
+  border-radius: 10px;
+  padding: 1.5rem;
+  max-width: 520px;
+  width: calc(100% - 2rem);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+.feedback-dialog::backdrop {
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.feedback-dialog h3 {
+  margin-bottom: 0.75rem;
+  color: #f15a08;
+}
+
+.feedback-content {
+  margin-bottom: 1rem;
+}
+
+.feedback-content ul {
+  padding-left: 1.25rem;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.feedback-dialog button {
+  background-color: #f15a08;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 0;
+}
+
+@media (min-width: 769px) {
+  .subscription-grid {
+    grid-template-columns: repeat(2, minmax(220px, 1fr));
+  }
 }
 
 /* ===== MEDIA HELPERS ===== */
