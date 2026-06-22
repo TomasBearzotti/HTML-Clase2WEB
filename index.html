@@ -16,6 +16,7 @@
       href="https://www.rosario3.com/__export/1559748440188/sites/rosario3/arte/v2/favicon.ico"
     />
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="index.js" defer></script>
   </head>
   <body>
     <header>
@@ -45,7 +46,7 @@
             aria-hidden="true"
           />
           <div class="header-top">
-            <p class="header-date">15 de abril de 2025</p>
+            <p class="header-date" id="header-date">FECHA</p>
 
             <p class="header-socials">
               <a
@@ -104,6 +105,17 @@
                 alt="Busqueda"
               />
             </label>
+            <button
+              type="button"
+              class="header-login"
+              aria-label="Login"
+              onclick="document.getElementById('loginDialog').showModal()"
+            >
+              <img
+                src="https://img.icons8.com/?size=100&id=hOMBXRpDUfJQ&format=png&color=000000"
+                alt="Login"
+              />
+            </button>
           </div>
 
           <div class="search-menu">
@@ -560,5 +572,146 @@
         </dialog>
       </section>
     </main>
+
+    <dialog id="loginDialog" class="login-dialog subscription-dialog">
+      <form id="subscriptionForm" class="subscription-form" novalidate>
+        <div class="dialog-header">
+          <div>
+            <p class="form-kicker">Suscripción</p>
+            <h2 id="subscriptionTitle" class="subscription-title">
+              Registrarse
+            </h2>
+          </div>
+
+          <button
+            type="button"
+            class="dialog-close"
+            aria-label="Cerrar formulario"
+            onclick="document.getElementById('loginDialog').close()"
+          >
+            ×
+          </button>
+        </div>
+
+        <p class="dialog-intro">
+          Completá tus datos para suscribirte al diario online.
+        </p>
+
+        <div class="subscription-grid">
+          <div class="form-field full-width">
+            <p id="nameGreeting" class="name-greeting" aria-live="polite"></p>
+            <label for="nombre-completo">Nombre completo</label>
+            <input
+              type="text"
+              id="nombre-completo"
+              name="nombre_completo"
+              autocomplete="name"
+            />
+            <small class="field-error" id="error-nombre-completo"></small>
+          </div>
+
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" />
+            <small class="field-error" id="error-email"></small>
+          </div>
+
+          <div class="form-field">
+            <label for="password">Contraseña</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              autocomplete="new-password"
+              data-bwignore="true"
+            />
+            <small class="field-error" id="error-password"></small>
+          </div>
+
+          <div class="form-field">
+            <label for="repeat-password">Repetir contraseña</label>
+            <input
+              type="password"
+              id="repeat-password"
+              name="repeat_password"
+              autocomplete="new-password"
+              data-bwignore="true"
+            />
+            <small class="field-error" id="error-repeat-password"></small>
+          </div>
+
+          <div class="form-field">
+            <label for="edad">Edad</label>
+            <input type="number" id="edad" name="edad" min="0" />
+            <small class="field-error" id="error-edad"></small>
+          </div>
+
+          <div class="form-field">
+            <label for="telefono">Teléfono</label>
+            <input
+              type="tel"
+              id="telefono"
+              name="telefono"
+              autocomplete="tel"
+            />
+            <small class="field-error" id="error-telefono"></small>
+          </div>
+
+          <div class="form-field full-width">
+            <label for="direccion">Dirección</label>
+            <input
+              type="text"
+              id="direccion"
+              name="direccion"
+              autocomplete="street-address"
+            />
+            <small class="field-error" id="error-direccion"></small>
+          </div>
+
+          <div class="form-field">
+            <label for="ciudad">Ciudad</label>
+            <input
+              type="text"
+              id="ciudad"
+              name="ciudad"
+              autocomplete="address-level2"
+            />
+            <small class="field-error" id="error-ciudad"></small>
+          </div>
+
+          <div class="form-field">
+            <label for="codigo-postal">Código postal</label>
+            <input
+              type="text"
+              id="codigo-postal"
+              name="codigo_postal"
+              autocomplete="postal-code"
+            />
+            <small class="field-error" id="error-codigo-postal"></small>
+          </div>
+
+          <div class="form-field full-width">
+            <label for="dni">DNI</label>
+            <input type="text" id="dni" name="dni" autocomplete="off" />
+            <small class="field-error" id="error-dni"></small>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
+    </dialog>
+
+    <dialog id="feedbackDialog" class="feedback-dialog">
+      <h3 id="feedbackTitle">Resultado</h3>
+      <div id="feedbackContent" class="feedback-content"></div>
+      <button
+        type="button"
+        onclick="document.getElementById('feedbackDialog').close()"
+      >
+        Cerrar
+      </button>
+    </dialog>
   </body>
 </html>

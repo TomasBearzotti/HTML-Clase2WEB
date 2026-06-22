@@ -42,3 +42,7 @@ En esta clase adaptamos nuestra page con los breakpoints para poder adaptarla a 
 ## Clase 6
 
 En esta clase utilizamos la funcionalidad nativa de Flexbox en css para manejar de manera mas eficiente las cosas dentro de nuestro contenedor. Lo aplico bastante en toda la organizacion de la pagina.
+
+## Clase 8
+
+En esta clase aprendemos a usar javascript, hacemos un formulario de subscripcion para el portal de noticias y hacemos la verificacion de los datos con JS.
